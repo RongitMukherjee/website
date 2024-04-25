@@ -1,7 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: #66BFBF;
+    
+}
+
+.hbtn {
+    font-family: "Montserrat", sans-serif;
+    color:#EAF6F6;
+    text-decoration: none;
+}
+
 .top-container {
     background-color: #EAF6F6;
     position: relative;
-    padding-top: 80px;
+    padding-top: 160px;
 }
 
 .middle-container {
@@ -17,7 +35,7 @@
 
 .top-cloud {
     position: absolute;
-    top: 8%;
+    top: 15%;
     right: 22%;
 }
 
@@ -27,23 +45,26 @@
 }
 
 .skill-row {
+    /*border: 2px solid black;*/
+    display: flex;
     width: 60%;
-    margin: 50px auto;
-    text-align: left;
+    margin: auto;
+    align-items: center;
+    gap: 30px
 }
 
-.java {
-    width: 25%;
-    float: right;
-    margin-left: 30px;
-    border-radius: 0.5rem;
+.java, .webdev {
+    /*border: 2px solid red;*/
+    width: 200px;
+    border-radius: 2rem;
 }
 
-.webdev {
-    width: 25%;
-    float: left;
-    margin-right: 30px;
-    border-radius: 0.5rem;
+.webd {
+    text-align: left;;
+}
+
+.javad {
+    text-align: right;
 }
 
 .dp {
@@ -118,7 +139,7 @@ h2 {
 
 h3 {
     font-family: "Montserrat", sans-serif; 
-    color: #11999E;
+    color: #11999E !important;
 }
 
 p {
@@ -137,11 +158,18 @@ hr {
     color: #95c0c0;
 }
 
+.pcuc {
+    padding-top: 200px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
 @media (max-width: 1080px) {
     .top-container {
         background-color: #EAF6F6;
         position: relative;
-        padding-top: 10%;
+        padding-top: 16%;
     }
     
     .middle-container {
@@ -157,7 +185,7 @@ hr {
     
     .top-cloud {
         position: absolute;
-        top: 8%;
+        top: 15%;
         right: 15%;
     }
     
@@ -176,14 +204,12 @@ hr {
         width: 33.5%;
         float: right;
         margin-left: 20px;
-        border-radius: 0.5rem;
     }
     
     .webdev {
         width: 33.5%;
         float: left;
         margin-right: 20px;
-        border-radius: 0.5rem;
     }
     
     .dp {
